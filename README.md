@@ -9,6 +9,9 @@ This repository contains a backend solution that allows managing job vacancies a
 - [x] Tests unitários
 - [x] Tests de integração
 - [x] PostgreSQL
+- [x] Spring Actuator
+- [x] Prometheus
+- [x] Grafana
 
 ## Fazer o clone do repositório
 
@@ -55,6 +58,13 @@ $ docker-compose up
 u: `admin`
 s: `admin`
 
+
+<img src="./images/sonarqube/sonarquebe-screen.png" alt="Tela do dashboard do Sonarqube" width="80%">
+
+<img src="./images/sonarqube/sonarquebe-screen-issues.png" alt="Tela de Issues do Sonarqube" width="80%">
+
+<img src="./images/sonarqube/sonarquebe-screen-projects.png" alt="Tela de projeto do Sonarqube" width="80%">
+
 ### Executar o teste do sonar manualmente pelo terminal
 ```
 mvn clean verify sonar:sonar \
@@ -62,6 +72,27 @@ mvn clean verify sonar:sonar \
 -Dsonar.host.url=http://localhost:9000 \
 -Dsonar.login=sqp_34b718e0308bacee6ab48f2798f6fcc7e2823f56
 ```
+
+### Observabilidade
+
+- Actuator
+`http://localhost:8080/actuator`
+
+#### Prometheus
+`http://localhost:9090/`
+
+<img src="./images/prometheus/prometheus-screen.png" alt="Tela do Prometheus" width="80%">
+
+#### Grafana
+`http://localhost:3000/`
+user: admin
+password: admin
+
+<img src="./images/grafana/grafana-dashboard.png" alt="dashboard do grafana" width="80%">
+<img src="./images/grafana/grafana-dashboard-data.png" alt="dashboard do grafana" width="80%">
+<img src="./images/grafana/grafana-dashboard-data-2.png" alt="dashboard do grafana" width="80%">
+<img src="./images/grafana/grafana-dashboard-data-3.png" alt="dashboard do grafana" width="80%">
+<img src="./images/grafana/grafana-dashboard-data-4.png" alt="dashboard do grafana" width="80%">
 
 Autor
 ---
