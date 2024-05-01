@@ -95,7 +95,10 @@ password: admin
 <img src="./images/grafana/grafana-dashboard-data-4.png" alt="dashboard do grafana" width="80%">
 
 #### Links úteis
-[Actions do git actions](https://github.com/orgs/actions/repositories?type=all)
+- [Actions do git actions](https://github.com/orgs/actions/repositories?type=all)
+- [Instalar Docker no EC2](https://foregoing-rudbeckia-668.notion.site/Instala-o-do-docker-na-EC2-Ubuntu-47e8dba78aee47739ffca876e019b56b)
+
+
 
 Autor
 ---
